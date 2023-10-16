@@ -65,7 +65,6 @@ fun LoginScreen() {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .padding(16.dp)
             .background(Color(0xFF800080).copy(alpha = 0.8f)),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
@@ -116,7 +115,7 @@ fun LoginScreen() {
             visualTransformation = PasswordVisualTransformation(),
             modifier = Modifier
                 .width(200.dp)
-                .height(50.dp)
+                .height(30.dp)
                 .background(Color.White)
         )
 
@@ -133,7 +132,7 @@ fun LoginScreen() {
             },
             modifier = Modifier
                 .width(400.dp)
-                .height(50.dp),
+                .height(30.dp),
             enabled = isLoginButtonEnabled
         ) {
             Text(text = "Sign In")
